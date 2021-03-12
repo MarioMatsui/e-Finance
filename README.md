@@ -2,3 +2,5 @@
 
 # e-Finance$
 #### A website that organize you financial life.
+
+![thumb](https://user-images.githubusercontent.com/63224412/110983531-9d9b0b80-8348-11eb-8fb5-aa5839c3537e.png)
