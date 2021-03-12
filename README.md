@@ -1,6 +1,6 @@
 # e-Finance$
 
-<img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+<img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23F7DF1E?&style=for-the-badge&logo=javascript&logoColor=white"/>
 
 A website that organize you financial life.
 
@@ -19,4 +19,6 @@ The [e-finance](https://efinance.vercel.app/), is a website that intends to orga
 ---
 
 💚 by [Mario Matsui](https://github.com/MarioMatsui)
+
 [![Linkedin Badge](https://img.shields.io/badge/-Mario%20Matsui-green?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mario-matsui/)](https://www.linkedin.com/in/mario-matsui/)
+[![Gmail Badge](https://img.shields.io/badge/-mariomatsuif@gmail.com-green?style=flat-square&logo=Gmail&logoColor=white&link=mailto:mariomatsuif@gmail.com)](mailto:mariomatsuif@gmail.com)
