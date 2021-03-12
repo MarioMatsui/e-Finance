@@ -13,10 +13,12 @@
 </head>
 
 <body>
+    <!--Logo cabeçalho-->
     <header>
         <img src="assets/logo.svg" alt="Logo eFinance">
     </header>
 
+    <!--Dados sobre soma das entradas, gastos, e total-->
     <main class="container">
         <section id="balance">
             <h2 class="sr-only">Balance</h2>
@@ -46,8 +48,10 @@
 
         <h2 class="sr-only">Transactions</h2>
 
+        <!--Botão que abre o modal para adicionar gasto/entrada-->
         <a href="#" onclick="Modal.open()" class="button new">+ New Transaction</a>
 
+    <!--Tabela de gastos e entradas-->
         <section id="transaction">
             <table id="data-table">
                 <thead>
@@ -64,6 +68,7 @@
         </section>
     </main>
 
+    <!--Modal uasdo para adicionar um gasto/entrada-->
     <div class="modal-overlay">
         <div class="modal">
             <div class="form">
@@ -94,6 +99,7 @@
     <footer>
         <p>e-Finance$</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
