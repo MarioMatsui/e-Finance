@@ -170,6 +170,8 @@ table thead th {
 
 table tbody tr {
     opacity: 0.7;
+
+    transition: opacity .2s;
 }
 
 table tr:hover {
@@ -181,6 +183,15 @@ table td {
 
     padding: 1rem 2rem;
     font-weight: 400;
+}
+table td img {
+    cursor: pointer;
+
+    transition: filter .2s;
+}
+
+table td img:hover {
+    filter: brightness(.6);
 }
 
 td.description {
@@ -221,11 +232,15 @@ table tbody tr td:last-child {
     visibility: hidden;
 
     z-index: 1;
+
+    transition: .2s;
 }
 
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+
+    transition: .2s;
 }
 
 .modal {
