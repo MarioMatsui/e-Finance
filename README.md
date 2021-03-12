@@ -2,11 +2,13 @@
 
 <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23F7DF1E?&style=for-the-badge&logo=javascript&logoColor=white"/>
 
-A website that organize you financial life.
+A website that organize you financial life. You can see the project running 24/7 and 100% fine [here](https://efinance.vercel.app/).
 
 ## About e-finance
 
 The [e-finance](https://efinance.vercel.app/), is a website that intends to organize your financial life.
+
+<br>
 
 <p align = "center">
   <a href="https://www.figma.com/file/XkGtkOgPIHEqfRIOTw6HvB/dev.finance-Maratona-Discover">
@@ -14,7 +16,9 @@ The [e-finance](https://efinance.vercel.app/), is a website that intends to orga
   </a>
 </p>
 
-![thumb](https://user-images.githubusercontent.com/63224412/110983531-9d9b0b80-8348-11eb-8fb5-aa5839c3537e.png)
+<br>
+
+![thumb](ttps://user-images.githubusercontent.com/63224412/111000213-646e9580-8360-11eb-8336-9b87c89cbbb3.png)
 
 ---
 
