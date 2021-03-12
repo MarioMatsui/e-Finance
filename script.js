@@ -1,3 +1,4 @@
+// Funcionalidade abrir e fechar modal.
 const Modal = {
     open() {
         document.querySelector('.modal-overlay').classList.add('active')
@@ -7,6 +8,7 @@ const Modal = {
     }
 }
 
+// sistema que armazena as informações no dispositivo(cookies)
 const Storage = {
     get() {
         return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
@@ -16,8 +18,9 @@ const Storage = {
     }
 }
 
+// Calcula as informações para coloca-las nos cards.
 const Transaction = {
-    all: Storage.get(),
+    all: Storage.get(), 
 
     add(transaction) {
         Transaction.all.push(transaction)
@@ -29,6 +32,7 @@ const Transaction = {
 
         App.reload()
     },
+    // Calcula e soma as entradas. (se a entrada for maior que zero, ele soma nos incomes)
     incomes() {
         let income = 0;
 
@@ -40,6 +44,7 @@ const Transaction = {
 
         return income;
     },
+    // Calcula e soma os gastos. (se a entrada for menor que zero, ele soma nas expenses)
     expenses() {
         let expense = 0;
 
@@ -52,12 +57,15 @@ const Transaction = {
         return expense;
 
     },
+    // soma os incomes e as expenses
     Total() {
         return Transaction.incomes() + Transaction.expenses();
     }
 }
 
+// mexe nos elementos da página.
 const DOM = {
+    //coloca o elemento </tr> na table
     transactionsContainer: document.querySelector('#data-table tbody'),
     addTransaction(transaction, index) {
         const tr = document.createElement('tr')
@@ -67,6 +75,7 @@ const DOM = {
         DOM.transactionsContainer.appendChild(tr)
     },
 
+    // lida com os elementos da tabela, interpola as informações para que mude no nosso html.
     innerHTMLTransaction(transaction, index) {
         const CSSclass = transaction.amount >= 0 ? "income" : "expense"
 
@@ -83,6 +92,7 @@ const DOM = {
         return html
     },
 
+    //
     updateBalance() {
         document.getElementById('incomeDisplay').innerHTML = Utils.formatCurrency(Transaction.incomes())
         document.getElementById('expenseDisplay').innerHTML = Utils.formatCurrency(Transaction.expenses())
@@ -95,15 +105,20 @@ const DOM = {
 }
 
 const Utils = {
+    // formata o valor, multiplicando-o por 100
     formatAmount(value) {
         value = Number(value) * 100
 
         return value
     },
+
+    //formata a data, pois ela vem com um formatação diferente da habitual
     formatDate(date) {
         const splittedDate = date.split("-")
         return `${splittedDate[2]}/${splittedDate[1]}/${splittedDate[0]}`
     },
+
+    // formata moeda e sinais.
     formatCurrency(value) {
         const signal = Number(value) < 0 ? "-" : ""
 
@@ -120,11 +135,13 @@ const Utils = {
     },
 }
 
+// valores do formulário, do moral.
 const Form = {
     description: document.querySelector('input#description'),
     amount: document.querySelector('input#amount'),
     date: document.querySelector('input#date'),
 
+    // pega os valores colocados nos inputs. No caso seria as respostas do form.
     getValues() {
         return {
             description: Form.description.value,
@@ -132,6 +149,8 @@ const Form = {
             date: Form.date.value
         }
     },
+
+    // caso algum dos inputs esteja vazio (ou seja, == ""), ele lança um erro.
     validateFields() {
         const { description, amount, date } = Form.getValues()
         if (description.trim() == "" || amount.trim() == "" || date.trim() == "") {
@@ -151,14 +170,20 @@ const Form = {
             date
         }
     },
+
+    // adiciona o dado.
     saveTransaction() {
         Transaction.add(transaction)
     },
+
+    // limpa os dados da linha.
     clearFields() {
         Form.description.value = ""
         Form.amount.value = ""
         Form.date.value = ""
     },
+
+    // faz a checagem, validação e envio dos dados. Caso esteja tudo certoe ele não ativa o alert.
     submit(event) {
         event.preventDefault()
 
@@ -175,8 +200,8 @@ const Form = {
         Form.formatData()
     }
 }
-
 const App = {
+    //inicia o app
     init() {
         Transaction.all.forEach(function(transaction, index) {
             DOM.addTransaction(transaction, index)
