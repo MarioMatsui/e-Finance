@@ -19,4 +19,4 @@ The [e-finance](https://efinance.vercel.app/), is a website that intends to orga
 ---
 
 💚 by [Mario Matsui](https://github.com/MarioMatsui)
-[![Linkedin Badge](https://img.shields.io/badge/-Mario%20Matsui-green?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mario-matsui/)]
+[![Linkedin Badge](https://img.shields.io/badge/-Mario%20Matsui-green?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mario-matsui/)](https://www.linkedin.com/in/mario-matsui/)
