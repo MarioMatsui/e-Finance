@@ -18,7 +18,7 @@ The [e-finance](https://efinance.vercel.app/), is a website that intends to orga
 
 <br>
 
-![thumb](ttps://user-images.githubusercontent.com/63224412/111000213-646e9580-8360-11eb-8336-9b87c89cbbb3.png)
+![thumb](https://user-images.githubusercontent.com/63224412/111000213-646e9580-8360-11eb-8336-9b87c89cbbb3.png)
 
 ---
 
